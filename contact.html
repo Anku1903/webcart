@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="navs.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .contact {
+            position: relative;
+            display: flex;
+            padding: 50px 100px;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url("bg.jpg");
+
+
+        }
+
+        .contact .content {
+            max-width: 800px;
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .contact .content h2 {
+            font-size: 36px;
+            color: white;
+            font-weight: 500;
+        }
+
+        .contact .content p {
+
+            color: white;
+            font-weight: 300;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .container .info {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+        }
+
+        .container .info .box {
+            display: flex;
+            padding: 50px 0;
+            position: relative;
+        }
+
+        .container .info .box .icon {
+            height: 60px;
+            min-width: 60px;
+            background: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+
+        .container .info .box .text {
+            display: flex;
+            margin-left: 20px;
+            color: white;
+            font-size: 16px;
+            flex-direction: column;
+            font-weight: 300;
+
+        }
+
+        .container .info .box .text h3 {
+            font-weight: 500;
+            color: wheat;
+        }
+
+        .forms {
+            padding: 40px;
+            background: white;
+            width: 40%;
+        }
+
+        .forms h2 {
+            font-weight: 500;
+            font-size: 30px;
+            color: black;
+        }
+
+        .forms .inputbx {
+            position: relative;
+            margin-top: 10px;
+            width: 100%;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid black;
+            resize: none;
+
+        }
+
+        .forms input {
+            padding: 5px 0;
+            outline: none;
+        }
+
+        .forms .inputbx span {
+            position: absolute;
+            left: 0;
+            padding: 1px 0;
+            outline: none;
+            margin: 10px 0;
+            font-size: 16px;
+            pointer-events: none;
+            transition: .5s;
+            color: #666;
+        }
+
+        .forms .inputbx input:valid~span,
+        .forms .inputbx input:focus~span,
+        .forms .inputbx textarea:focus~span,
+        .forms .inputbx textarea:valid~span {
+            font-size: 12px;
+            transform: translate(-20px);
+            color: #e91e63;
+        }
+
+        .forms .inputbx input[type='submit'] {
+            width: 100px;
+            color: white;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px;
+            background: #000bcd;
+        }
+
+        @media (max-width: 991px) {
+            .contact {
+                padding: 50px;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .container .info,
+            .forms {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="" class="logo">Webcart</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="team-section.html">Teams</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <section class="contact">
+        <div class="content">
+            <h2> Contact Us </h2>
+            <p>
+                For any query you can read our FAQ section or feel free to contact
+                us. we will improve us by your feedback. Thank you.
+            </p>
+        </div>
+        <div class="container">
+            <div class="info">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3> Address</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam provident nihil molestiae
+                            eius sit labo</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3> Phone</h3>
+                        <p> 123-456-789</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3> Email</h3>
+                        <p> webdev1903@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="forms">
+                <form>
+                    <h2> Send Message</h2>
+                    <div class="inputbx">
+                        <input type="text" name="" id="" required="required">
+                        <span> Full Name</span>
+                    </div>
+                    <div class="inputbx">
+                        <input type="email" name="" id="" required="required">
+                        <span> Email</span>
+                    </div>
+                    <div class="inputbx">
+                        <textarea name="" id=""></textarea>
+                        <span> Type your Message</span>
+                    </div>
+                    <div class="inputbx">
+                        <input type="submit" value="Send">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
